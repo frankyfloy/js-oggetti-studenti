@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>js-oggetti-studenti</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- mycss and media-query -->
+        <link rel="stylesheet" href="assets\master.css">
+        <link rel="stylesheet" href="assets\media-query.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Script js -->
+        <script src="assets\main.js" charset="utf-8"></script>
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+
+    <!-- TODO: Da usare su spotify per la playlist -->
+    <body>
+
+        <!-- Controller per la ricerca utenti -->
+            <div id="controller_People" class="bg-black text-uppercase text-light font-weight-bold border border-dark rounded bg-my-green">
+
+                <!-- Container Cerca -->
+                <nav id="cont_Create_Find" class="bg-black border border-dark text-uppercase text-light font-weight-bold">
+
+                    <div id="Create_Controller" class="d-flex">
+                        <div id="cont_Registra">
+                            <button id="btn_Registra_Studente" type="button" class="btn btn-outline-light myBtnController">Registra studente</button>
+                        </div>
+
+
+                        <form id="my_Form" action="destination.html" class="d-none">
+
+                            <button type="button" class="btn btn-outline-light myBtnController"><input type="text" name="name" value="" placeholder ="Nome"></button>
+
+                            <button type="button" class="btn btn-outline-light myBtnController"><input type="text" name="cognome" value="" placeholder ="Cognome"></button>
+
+                            <button type="button" class="btn btn-outline-light myBtnController"><input type="number" name="età" value="" min="5" max="80" placeholder = "Età"></button>
+
+                            <button type="submit" class="btn btn-outline-light myBtnController">Salva</button>
+                        </form>
+
+                        <div id="cont_YouAreRegistered" class="d-none ml-2">
+                            <h3 class="text-green">Registrato</h3>
+                            <button type="button" class="btn_Home btn btn-outline-light myBtnController mb-2">Home</button>
+                        </div>
+                        <div id="cont_Not_Registered" class="d-none">
+                            <h3 class="text-danger">Studente
+                                registrato</h3>
+                            <button type="button" class="btn_Home btn btn-outline-light myBtnController mb-2">Home</button>
+                        </div>
+                    </div>
+                </nav>
+
+                <div id="cont_Console_Res" class="d-none">
+                    <div id="dati_Studente" class="mt-2 ml-2">
+                        <p class="nome"></p>
+                        <p class="cognome"></p>
+                        <p class="età"></p>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

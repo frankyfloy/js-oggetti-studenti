@@ -1,0 +1,64 @@
+html { font-size:100%; }
+
+body{
+    background-color: cyan;
+}
+
+#Create_Controller{
+
+}
+
+.myBtnController:hover{
+    background-color: #388e3c;
+    color: #000000;
+    text-shadow: 0 0 1px #000000;
+    transform: scale(1.06);
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.myBtnController:active{
+    background-color: #388e3c;
+
+}
+
+#cont_Create_Find{
+
+    border-radius: 5px;
+}
+
+#cont_Create_Find div{
+    border-radius: 5px;
+}
+
+
+
+/* bg-color */
+.bg-black{
+    background-color: #000000;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-my-green{
+    background-color: #388e3c;
+}
+
+.text-green{
+    color: #388e3c;
+}
+
+/* text */
+
+.text-red{
+    color: red;
+}
+
+/* border color */
+
+.text-color_Blk{
+    color: #000000;
+}
