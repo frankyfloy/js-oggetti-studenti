@@ -5,7 +5,7 @@ body{
 }
 
 #Create_Controller{
-
+    margin: 15px 0;
 }
 
 .myBtnController:hover{
@@ -24,7 +24,6 @@ body{
 }
 
 #cont_Create_Find{
-
     border-radius: 5px;
 }
 

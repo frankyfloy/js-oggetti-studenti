@@ -30,12 +30,14 @@
                 <!-- Container Cerca -->
                 <nav id="cont_Create_Find" class="bg-black border border-dark text-uppercase text-light font-weight-bold">
 
-                    <div id="Create_Controller" class="d-flex">
+                    <div id="Create_Controller" class="col-12 d-flex">
                         <div id="cont_Registra">
                             <button id="btn_Registra_Studente" type="button" class="btn btn-outline-light myBtnController">Registra studente</button>
+                            <button id="btn_View_Studenti" type="button" class="btn btn-outline-light myBtnController">Visualizza Studenti</button>
+
                         </div>
 
-
+                        <!-- Input dati -->
                         <form id="my_Form" action="destination.html" class="d-none">
 
                             <button type="button" class="btn btn-outline-light myBtnController"><input type="text" name="name" value="" placeholder ="Nome"></button>
@@ -44,26 +46,50 @@
 
                             <button type="button" class="btn btn-outline-light myBtnController"><input type="number" name="età" value="" min="5" max="80" placeholder = "Età"></button>
 
-                            <button type="submit" class="btn btn-outline-light myBtnController">Salva</button>
+                            <button type="submit" class="btn btn-outline-light myBtnController ml-2">Salva</button>
                         </form>
 
-                        <div id="cont_YouAreRegistered" class="d-none ml-2">
+
+                        <!-- Containers Esito Registrazione -->
+                        <div id="cont_Success_Reg" class="d-none ml-2">
                             <h3 class="text-green">Registrato</h3>
-                            <button type="button" class="btn_Home btn btn-outline-light myBtnController mb-2">Home</button>
                         </div>
-                        <div id="cont_Not_Registered" class="d-none">
+
+                        <div id="cont_Failed_Reg" class="d-none">
                             <h3 class="text-danger">Studente
                                 registrato</h3>
-                            <button type="button" class="btn_Home btn btn-outline-light myBtnController mb-2">Home</button>
+                        </div>
+                        <!--/////////////////// -->
+
+
+
+                        <!-- Container Header Visualizza Lista -->
+                        <div id="cont_Header_View_List" class="d-none ml-2">
+                            <h3 class="text-green">Lista Studenti</h3>
+                        </div>
+
+
+                        <!-- TODO:  -->
+                        <div class="ml-auto">
+                            <button type="button" class="btn_Home btn btn-outline-light myBtnController">Home</button>
                         </div>
                     </div>
                 </nav>
 
                 <div id="cont_Console_Res" class="d-none">
-                    <div id="dati_Studente" class="mt-2 ml-2">
-                        <p class="nome"></p>
-                        <p class="cognome"></p>
-                        <p class="età"></p>
+                    <div id="cont-lista_Studenti" class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="text-uppercase"><strong class="text-color_Blk">Cognome</strong></th>
+                                    <th class="text-uppercase"><strong class="text-color_Blk">Nome</strong></th>
+                                </tr>
+                            </thead>
+                            <!-- Lista JS-->
+                            <tbody id="tabellaPersone" class="text-light">
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
